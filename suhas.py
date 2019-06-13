@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from flask import Flask,request
 from flask_pymongo import PyMongo
 from flask_restful import Api,Resource
@@ -15,10 +16,12 @@ class Search(Resource):
             category = data['category']
 
             all_stores = mongo.db.sample.find()
+
             ratings = []
             prices = []
             quant = []
             stores = []
+
             for store in all_stores:
                 if category in store['comm'].keys() and item in store['comm'][category].keys():
                     stores.append(store['sname'])
@@ -39,10 +42,16 @@ class Search(Resource):
                 return {'error':False,'match':True,'response':{'price_wise':price_wise,'rating_wise':rating_wise}},200
 
         except KeyError as e:
-            print(e)
+            print("key error "+str(e))
             return {'error':True},400
 
+class Map(Resource):
+    def post(self):
+        pass
+
+
 api.add_resource(Search,'/search')
+api.add_resource(Map,'/map')
 
 if __name__ == '__main__':
     app.run(debug=True)
