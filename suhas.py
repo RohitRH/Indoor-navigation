@@ -51,19 +51,12 @@ class Search(Resource):
 class Map(Resource):
     def get(self):
         try:
-            i1 = open('/home/dexter/Desktop/img1.jpg','rb').read()
-            i2 = open('/home/dexter/Desktop/img2.jpg','rb').read()
-            i3 = open('/home/dexter/Desktop/img3.jpg','rb').read()
-
-            str1 = base64.b64encode(i1).decode('ascii')
-            str2 = base64.b64encode(i2).decode('ascii')
-            str3 = base64.b64encode(i3).decode('ascii')
+            # store the images in the database as string:
+            str1 = base64.b64encode(open('/home/dexter/Desktop/img1.jpg','rb').read()).decode('ascii')
+            str2 = base64.b64encode(open('/home/dexter/Desktop/img2.jpg','rb').read()).decode('ascii')
+            str3 = base64.b64encode(open('/home/dexter/Desktop/img3.jpg','rb').read()).decode('ascii')
 
             send = [str1,str2,str3]
-
-            '''orig = base64.b64decode(str)
-            fh = open("/home/dexter/Desktop/converted.jpg", "wb+")
-            fh.write(orig)'''
 
             return({'error':False,'response':send})
         except:
