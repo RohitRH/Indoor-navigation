@@ -2,6 +2,9 @@
 from flask import Flask,request
 from flask_pymongo import PyMongo
 from flask_restful import Api,Resource
+from json import *
+from bson.json_util import dumps
+import base64
 
 app = Flask(__name__)
 app.config["MONGO_URI"] = "mongodb://localhost:27017/sample"
@@ -46,9 +49,47 @@ class Search(Resource):
             return {'error':True},400
 
 class Map(Resource):
-    def post(self):
-        pass
+    def get(self):
+        try:
+            i1 = open('/home/dexter/Desktop/img1.jpg','rb').read()
+            i2 = open('/home/dexter/Desktop/img2.jpg','rb').read()
+            i3 = open('/home/dexter/Desktop/img3.jpg','rb').read()
 
+            str1 = base64.b64encode(i1).decode('ascii')
+            str2 = base64.b64encode(i2).decode('ascii')
+            str3 = base64.b64encode(i3).decode('ascii')
+
+            send = [str1,str2,str3]
+
+            '''orig = base64.b64decode(str)
+            fh = open("/home/dexter/Desktop/converted.jpg", "wb+")
+            fh.write(orig)'''
+
+            return({'error':False,'response':send})
+        except:
+            return {'error':True},400
+        #mongo.db.sample.indoor.insert({'bid':1,''})
+
+    def post(self):
+        data = request.get_json()
+        try:
+            bid = data['bid']
+            src = data['src']
+            dest = data['dest']
+
+            store = mongo.db.sample.indoor.find({'bid':bid,'src':src,'dest':dest})[0]
+
+            img = store['img']
+
+            return({'error':False,'response':img})
+
+        except KeyError as e:
+            print("key error "+str(e))
+            return {'error':True},400
+
+        except IndexError as e:
+            print("No such route "+str(e))
+            return {'error':True},400
 
 api.add_resource(Search,'/search')
 api.add_resource(Map,'/map')

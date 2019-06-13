@@ -1,10 +1,11 @@
 Outline : Each of the following API returns a JSON which contains an 'error' key (boolean) to indicate errors in communication. This helps the API user to check for errors before-hand.
 
 1) Search API :
-method = GET
-params : item and category (strings)
-return body : JSON of price-sorted and rating-sorted store details for a particular item and its category in the whole mall if it exists(matches). The body contains an additional 'match' key (boolean) to indicate whether or not an item belonging to the category exists in the mall or not.
+method = GET:
+    params : item (string), category (string) -> '/search?item=item&category=category' -> [url]
+    return body : JSON of price-sorted and rating-sorted store details for a particular item and its category in the whole mall if it exists(matches). The body contains an additional 'match' key (boolean) to indicate whether or not an item belonging to the category exists in the mall or not.
 
 2) Map API:
-method = POST
-params : beacon id
+method = POST:
+    params : beacon id (int), source (int), destination (int) -> [json]
+    return body : string of bytes of the route image from source to destination. The image from source to destination is same as the image from destination to source.
