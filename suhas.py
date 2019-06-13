@@ -52,9 +52,9 @@ class Map(Resource):
     def get(self):
         try:
             # store the images in the database as string:
-            str1 = base64.b64encode(open('/home/dexter/Desktop/img1.jpg','rb').read()).decode('ascii')
-            str2 = base64.b64encode(open('/home/dexter/Desktop/img2.jpg','rb').read()).decode('ascii')
-            str3 = base64.b64encode(open('/home/dexter/Desktop/img3.jpg','rb').read()).decode('ascii')
+            str1 = base64.b64encode(open('img1.jpg','rb').read()).decode('ascii')
+            str2 = base64.b64encode(open('img2.jpg','rb').read()).decode('ascii')
+            str3 = base64.b64encode(open('img3.jpg','rb').read()).decode('ascii')
 
             send = [str1,str2,str3]
 
