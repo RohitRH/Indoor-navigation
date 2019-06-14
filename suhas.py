@@ -2,6 +2,7 @@
 from flask import Flask,request
 from flask_pymongo import PyMongo
 from flask_restful import Api,Resource
+import json
 from json import *
 from bson.json_util import dumps
 import base64
@@ -50,18 +51,11 @@ class Search(Resource):
 
 class Map(Resource):
     def get(self):
-        try:
-            # store the images in the database as string:
-            str1 = base64.b64encode(open('img1.jpg','rb').read()).decode('ascii')
-            str2 = base64.b64encode(open('img2.jpg','rb').read()).decode('ascii')
-            str3 = base64.b64encode(open('img3.jpg','rb').read()).decode('ascii')
+        # store the images in the database as string:
+        f = open('img1.jpg','rb').read()
+        data = base64.b64encode(f).decode('ascii')
 
-            send = [str1,str2,str3]
-
-            return({'error':False,'response':send})
-        except:
-            return {'error':True},400
-        #mongo.db.sample.indoor.insert({'bid':1,''})
+        return {'response':data}
 
     def post(self):
         data = request.get_json()
