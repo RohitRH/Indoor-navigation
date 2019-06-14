@@ -2,6 +2,10 @@
 from flask import Flask,request
 from flask_pymongo import PyMongo
 from flask_restful import Api,Resource
+import json
+from json import *
+from bson.json_util import dumps
+import base64
 
 app = Flask(__name__)
 app.config["MONGO_URI"] = "mongodb://localhost:27017/sample"
@@ -46,9 +50,33 @@ class Search(Resource):
             return {'error':True},400
 
 class Map(Resource):
-    def post(self):
-        pass
+    def get(self):
+        # store the images in the database as string:
+        f = open('img1.jpg','rb').read()
+        data = base64.b64encode(f).decode('ascii')
 
+        return {'response':data}
+
+    def post(self):
+        data = request.get_json()
+        try:
+            bid = data['bid']
+            src = data['src']
+            dest = data['dest']
+
+            store = mongo.db.sample.indoor.find({'bid':bid,'src':src,'dest':dest})[0]
+
+            img = store['img']
+
+            return({'error':False,'response':img})
+
+        except KeyError as e:
+            print("key error "+str(e))
+            return {'error':True},400
+
+        except IndexError as e:
+            print("No such route "+str(e))
+            return {'error':True},400
 
 api.add_resource(Search,'/search')
 api.add_resource(Map,'/map')
