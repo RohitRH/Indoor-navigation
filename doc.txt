@@ -7,5 +7,10 @@ method = GET:
 
 2) Map API:
 method = POST:
-    params : beacon id (int), source (int), destination (int) -> [json]
-    return body : string of bytes of the route image from source to destination. The image from source to destination is same as the image from destination to source.
+    params : {'source':(string),'dest':(string)}
+    return body : string of bytes of the route image from source to destination. The image from source to destination is same as the image from destination to source. OR image URL.
+
+3) Marketing API:
+method = POST:
+    params : {'bid':(string)}
+    return body : This API returns the corresponding ads and coupons of a store. response is a JSON body which contains 'ads' and 'coupons' as keys
