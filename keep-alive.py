@@ -21,7 +21,7 @@ count = 0
 try:
     while True:
         time.sleep(60)
-        print(requests.get("http://{}.serveo.net".format(domain)),count)
+        requests.get("http://{}.serveo.net".format(domain))
         count+=1
 except:
-    exit("bye")
+    exit("Server was online for {} minutes : {}\nbye".format(count))
