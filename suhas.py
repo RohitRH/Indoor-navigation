@@ -9,7 +9,7 @@ import base64,random
 
 app = Flask(__name__)
 app.config["MONGO_URI"] = ""
-client=pymongo.MongoClient("mongodb://suhas:suhas@owner-shard-00-00-gwlya.mongodb.net:27017,owner-shard-00-01-gwlya.mongodb.net:27017,owner-shard-00-02-gwlya.mongodb.net:27017/owner?ssl=true&replicaSet=owner-shard-0&authSource=admin&retryWrites=true&w=majority")
+client=pymongo.MongoClient("mongodb://suhas:suhas@owner-shard-00-00-gwlya.mongodb.net:27017,owner-shard-00-01-gwlya.mongodb.net:27017,owner-shard-00-02-gwlya.mongodb.net:27017/owner?ssl=true&replicaSet=owner-shard-0&authSource=admin&retryWrites=true&w=majority",connect=False)
 db = client.owner
 
 api = Api(app)
@@ -66,7 +66,7 @@ class Map(Resource):
 
             store = db.indoor.find({'src':bid,'dest':dest})[0]
 
-            data = store['img']
+            data = store['img_url']
 
             #data = base64.b64encode(img).decode('utf-8')
 
