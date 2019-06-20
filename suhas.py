@@ -2,7 +2,7 @@
 from flask import Flask,request
 import pymongo
 from flask_restful import Api,Resource
-import base64,random
+import datetime,random
 
 app = Flask(__name__)
 api = Api(app)
@@ -78,9 +78,42 @@ class Marketing(Resource):
         except KeyError:
             return {'error':True}
 
+class Footfall(Resource):
+    def post(self):
+        data = request.get_json()
+        try:
+            bid = str(data['bid'])
+            values = data['values']
+
+            dates = list(values.keys())
+            d = list(map(int,dates[3].split('/')[::-1]))
+            year = str(d[0])
+            weekno = str(datetime.date(d[0], d[1],d[2]).isocalendar()[1])
+
+            payload = {year:{weekno:{}}}
+
+            for i in dates:
+                day = datetime.datetime.strptime(i, '%d/%m/%Y').strftime('%A')
+                payload[year][weekno][day] = values[i]
+
+            store = db.footfall.find({'bid':bid})[0]
+
+            if year in store.keys():
+                store[year][weekno] = payload[year][weekno]
+            else:
+                store[year] = payload[year]
+
+            db.footfall.update({'bid':bid},{'$set':{year:store[year]}})
+
+            return {'error':False}
+        except:
+            return {'error':True}
+
+
 api.add_resource(Search,'/search')
 api.add_resource(Map,'/map')
 api.add_resource(Marketing,'/marketing')
+api.add_resource(Footfall,'/analysis')
 
 if __name__ == '__main__':
     app.run(debug=True)
