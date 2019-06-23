@@ -14,3 +14,8 @@ method = POST:
 method = POST:
     params : {'bid':(string)}
     return body : This API returns the corresponding ads and coupons of a store. response is a JSON body which contains 'ads' and 'coupons' as keys
+
+4) Footfall analysis:
+method = POST:
+    params : {'bid':(string),'values':{'23/06/2019':5,'24/06/2019':3,'25/06/2019':6,'26/06/2019':7,'27/06/2019':8,'28/06/2019':4,'29/06/2019':7}}
+    return body : This API stores weekly customer visit count for a store (bid) in the database for later analysis
