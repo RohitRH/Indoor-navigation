@@ -2,256 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="127afe96-e792-44cd-b469-aca048c1250e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/indoor-navigation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/p1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/predict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/sample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/serveo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/css/agency.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/css/agency.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/css/normalize.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/about/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/about/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/about/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/about/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/header-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/logos/creative-market.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/logos/designmodo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/logos/envato.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/logos/themeforest.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/map-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/portfolio/01-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/portfolio/01-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/portfolio/02-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/portfolio/02-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/portfolio/03-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/portfolio/03-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/portfolio/04-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/portfolio/04-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/portfolio/05-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/portfolio/05-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/portfolio/06-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/portfolio/06-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/portfolio/tracj.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/team/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/team/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/img/team/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/agency.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/agency.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/contact_me.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/about/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/about/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/about/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/about/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/header-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/logos/creative-market.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/logos/designmodo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/logos/envato.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/logos/themeforest.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/map-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/portfolio/01-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/portfolio/01-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/portfolio/02-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/portfolio/02-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/portfolio/03-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/portfolio/03-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/portfolio/04-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/portfolio/04-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/portfolio/05-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/portfolio/05-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/portfolio/06-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/portfolio/06-thumbnail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/portfolio/tracj.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/team/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/team/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/img/team/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/jqBootstrapValidation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/mail/contact_me.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/scss/agency.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/scss/base/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/scss/base/_page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/scss/base/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/scss/components/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/scss/components/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/scss/layout/_contact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/scss/layout/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/scss/layout/_masthead.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/scss/layout/_portfolio.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/scss/layout/_services.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/scss/layout/_team.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/scss/layout/_timeline.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/brands.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/brands.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/fontawesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/regular.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/regular.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/solid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/solid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/svg-with-js.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/svg-with-js.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/v4-shims.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/css/v4-shims.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/jquery-1.11.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/jquery-easing/jquery.easing.compatibility.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/jquery-easing/jquery.easing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/jquery-easing/jquery.easing.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/jquery/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/jquery/jquery.slim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/jquery/jquery.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/jquery/jquery.slim.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/scss/agency.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/scss/base/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/scss/base/_page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/scss/base/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/scss/components/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/scss/components/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/scss/layout/_contact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/scss/layout/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/scss/layout/_masthead.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/scss/layout/_portfolio.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/scss/layout/_services.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/scss/layout/_team.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/scss/layout/_timeline.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/tile-wide.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/tile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/brands.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/brands.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/fontawesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/regular.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/regular.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/solid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/solid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/svg-with-js.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/svg-with-js.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/v4-shims.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/css/v4-shims.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/jquery-1.11.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/jquery-easing/jquery.easing.compatibility.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/jquery-easing/jquery.easing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/jquery-easing/jquery.easing.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/jquery/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/jquery/jquery.slim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/jquery/jquery.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/jquery/jquery.slim.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/static/vendor/modernizr-2.8.3-respond-1.4.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/bar-graph.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/decide.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/footfall.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/image.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/index_image.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/item.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/store_data.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IN/templates/update_cpn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/IN/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indoor.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/IN/hello" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfa1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/floorplan/img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/floorplan/img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/floorplan/img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keep-alive.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map-images/Untitled.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map-images/hello.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map-images/map-1-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map-images/map-2-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map-images/map-3-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map-images/map-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map-images/map-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map-images/map-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map-images/map-reached.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/suhas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indoor.py" beforeDir="false" afterPath="$PROJECT_DIR$/indoor.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -273,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IN/sample.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
+            <state relative-caret-position="328">
               <caret line="353" column="41" lean-forward="true" selection-start-line="353" selection-start-column="41" selection-end-line="353" selection-end-column="41" />
               <folding>
                 <element signature="e#0#101#0" expanded="true" />
@@ -288,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IN/predict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="e#54#72#0" expanded="true" />
               </folding>
@@ -297,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IN/image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="e#0#96#0" expanded="true" />
               </folding>
@@ -336,7 +106,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/IN" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -512,8 +282,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sample" />
         <item itemvalue="Python.predict" />
+        <item itemvalue="Python.sample" />
         <item itemvalue="Python.image" />
         <item itemvalue="Python.serveo" />
         <item itemvalue="Python.p1 (1)" />
@@ -585,16 +355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IN/image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IN/serveo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
@@ -607,8 +367,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IN/predict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="e#54#72#0" expanded="true" />
           </folding>
@@ -617,10 +377,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IN/sample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
+        <state relative-caret-position="328">
           <caret line="353" column="41" lean-forward="true" selection-start-line="353" selection-start-column="41" selection-end-line="353" selection-end-column="41" />
           <folding>
             <element signature="e#0#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IN/image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#96#0" expanded="true" />
           </folding>
         </state>
       </provider>
