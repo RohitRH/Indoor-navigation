@@ -1,0 +1,10 @@
+30 minutes plan:
+
+1 - 10 minutes:
+Introduction, problem statement explanation
+
+10 - 20 minutes:
+Sub - problem explanation (indoor nav, personnel tracking, footfall analysis), implemented solution (beacons), our progress
+
+20 - 30 minutes:
+Challenges/drawbacks, future prospects, conclusion
