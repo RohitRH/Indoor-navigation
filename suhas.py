@@ -14,8 +14,8 @@ class Search(Resource):
     def get(self):
         data = request.args
         try:
-            item = data['item']
-            category = data['category']
+            item = data['item'].lower().capitalize()
+            category = data['category'].lower().capitalize()
             all_stores = db.itm.find()
             ratings = []
             prices = []
