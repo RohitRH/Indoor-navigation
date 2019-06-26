@@ -72,8 +72,9 @@ class Marketing(Resource):
             store = db.itm.find({'bid':bid})
             for i in store:
                 ads = i['ads']
-                coupons = i['cpn_des']
-            data = {'ads':ads,'coupons':coupons}
+                cpndesc = i['cpn_des']
+                cpn = i['cpn']
+            data = {'ads':ads,'cname':cpn,coupons':cpndesc}
             return {'error':False,'response':data}
         except KeyError:
             return {'error':True}
