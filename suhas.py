@@ -2,7 +2,7 @@
 from flask import Flask,request
 import pymongo
 from flask_restful import Api,Resource
-import datetime,random
+import datetime,random,base64
 
 app = Flask(__name__)
 api = Api(app)
@@ -14,8 +14,8 @@ class Search(Resource):
     def get(self):
         data = request.args
         try:
-            item = data['item']
-            category = data['category']
+            item = data['item'].lower().capitalize()
+            category = data['category'].lower().capitalize()
             all_stores = db.itm.find()
             ratings = []
             prices = []
@@ -72,8 +72,9 @@ class Marketing(Resource):
             store = db.itm.find({'bid':bid})
             for i in store:
                 ads = i['ads']
-                coupons = i['cpn_des']
-            data = {'ads':ads,'coupons':coupons}
+                cpndesc = i['cpn_des']
+                cpn = i['cpn']
+            data = {'ads':ads,'cname':cpn,coupons':cpndesc}
             return {'error':False,'response':data}
         except KeyError:
             return {'error':True}
