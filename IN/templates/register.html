@@ -1,0 +1,100 @@
+{% extends "base.html" %} {% block title %} THE THROSHOS {% endblock %} {% block content %}
+
+
+<style type="text/css">
+	#msg{
+		color: red
+	}
+</style>
+
+<!--<form action="register" method="POST" >
+    <p>
+    	<h4>Registration portal
+    		<h4 id="msg">{{msg}}</h4>
+    	</h4><br><br>
+        Email:<br><input type="Email" name="email" required><br><br>
+        Mobile Number:<br><input type="Number" name="mobile" required=""><br><br>
+        Beacon ID: <br> <input type="text" name="bid"  required><br><br>
+        Store Name:: <br><input type="text" name="sname" required><br><br>
+        Username:<br><input type="text" name="uname" required=""><br><br>
+        <label>password :
+  <br><input name="password" id="password" type="password" required onkeyup='check();' />
+</label>
+<br><br>
+<label>confirm password:
+  <br><input type="password" name="confirm_password" id="confirm_password" required onkeyup='check();' /> 
+  <span id='message'></span>
+</label><br>
+    </p>
+    <button type="submit" id="submit">Submit</button>
+</form>-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script >
+
+    var check = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('confirm_password').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'matching';
+    document.getElementById('submit').disabled=false;
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'not matching';
+    document.getElementById('submit').disabled=true;
+  }
+ 
+}
+  
+</script>
+
+<div class="jumbotron">
+<form action="register" method="POST">
+  <div class="form-group">
+
+   <h4 id="msg">{{msg}}</h4>    
+    <label for="formGroupExampleInput">Email</label>
+    <input type="email" class="form-control"  placeholder="Email" name="email" required="email">
+  </div>
+
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Mobile Number</label>
+    <input type="Number" class="form-control"  placeholder="Mobile Number" name="mobile" required>
+  </div>
+
+<div class="form-group">
+    <label for="formGroupExampleInput2">Beacon Id</label>
+    <input type="text" class="form-control"  placeholder="Beacon ID" name="bid" required>
+  </div>
+
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Store name</label>
+    <input type="text" class="form-control"  placeholder="Store name" name="sname" required>
+  </div>
+
+<div class="form-group">
+    <label for="formGroupExampleInput2">Username</label>
+    <input type="text" class="form-control"  placeholder="Username" name="uname" required>
+  </div>
+
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password" name="password" onkeyup="check()" required >
+  </div>
+
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Confirm Password</label>
+    <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Password" name="confirm_password"  required onkeyup="check()">
+  </div><br><br>
+<span id='message'></span>
+<button type="submit" class=" btn-lg btn-block btn btn-danger" id="submit">Submit</button>
+
+</form>
+</div>
+
+{% endblock %}

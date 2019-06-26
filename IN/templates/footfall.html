@@ -1,0 +1,315 @@
+{% extends "base.html" %} {% block title %} THE THROSHOS {% endblock %} {% block content %}
+<script lang="javascript">
+  
+
+</script>
+
+<style type="text/css">
+
+</style>
+
+
+<div class="jumbotron">
+<h1>FOOTFALL DATA</h1><br><br>
+<h3>GET FOOTFALL DATA BY DATE</h3><br>
+
+
+<div class="bootstrap-iso">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-6 col-sm-6 col-xs-12">
+
+    <!-- Form code begins -->
+    <form method="POST" action="footfall">
+      <div class="form-group"> <!-- Date input -->
+        <label class="control-label" for="date">Date</label>
+        <input class="form-control" id="date" name="date" placeholder="DD/MM/YYYY" type="text" required="date"/>
+      </div>
+      <div class="form-group"> <!-- Submit button -->
+        <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+      </div>
+     </form>
+     <!-- Form code ends --> 
+
+    </div>
+  </div>    
+ </div>
+</div>
+
+<br><br>
+<!-- count3 values -->
+
+{% if check %}
+
+<h2>DATEWISE DATA</h2>
+
+
+<table class="table table-bordered table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      
+      <th scope="col">DAY</th>
+      <th scope="col">NO. OF PEOPLE VISITED</th>
+    </tr>
+  </thead>
+   <tbody>
+
+    <tr>
+      <th >1</th>
+      <td >{{dayofweek}}</td>
+      <td>{{count3}}</td>
+    </tr>
+     
+  </tbody>
+</table>
+</div>
+
+{% else %}
+  <div class="alert alert-danger" role="alert">
+     {{msg}}
+</div>
+
+{% endif %}
+<!-- count3 ends -->
+
+<br><br>
+
+<h2>LAST WEEK DATA</h2>
+
+<div id="piechart"></div>
+
+
+
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['MONDAY', {{count[1]}}],
+  ['TUESDAY', {{count[2]}}],
+  ['WEDNESDAY',{{count[3]}}],
+  ['THURSDAY', {{count[4]}}],
+  ['FRIDAY', {{count[5]}}],
+  ['SATURDAY', {{count[6]}}],
+  ['SUNDAY', {{count[0]}}]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<table class="table table-bordered table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      
+      <th scope="col">DAY</th>
+      <th scope="col">NO. OF PEOPLE VISITED</th>
+    </tr>
+  </thead>
+   <tbody>
+    <tr>
+      <th >1</th>
+      <td >SUNDAY</td>
+      <td>{{count[0]}}</td>
+    </tr>
+
+    <tr>
+      <th scope="row">2</th>
+
+      <td>MONDAY</td>
+      <td>{{count[1]}}</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+   
+      <td>TUESDAY</td>
+      <td>{{count[2]}}</td>
+    </tr>
+    <tr>
+      <th >4</th>
+      <td >WEDNESDAY</td>
+      <td>{{count[3]}}</td>
+    </tr>
+     <tr>
+      <th >5</th>
+      <td >THURSDAY</td>
+      <td>{{count[4]}}</td>
+    </tr>
+     <tr>
+      <th >6</th>
+      <td >FRIDAY</td>
+      <td>{{count[5]}}</td>
+    </tr>
+     <tr>
+      <th >7</th>
+      <td >SATURDAY</td>
+      <td>{{count[6]}}</td>
+    </tr>
+     
+  </tbody>
+</table>
+</div>
+
+
+
+<div class="jumbotron">
+<h2>LAST YEAR DATA ON THIS WEEK</h2>
+
+<div id="piechart1"></div>
+
+
+
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart1);
+
+// Draw the chart and set the chart values
+function drawChart1() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['MONDAY', {{count1[1]}}],
+  ['TUESDAY', {{count1[2]}}],
+  ['WEDNESDAY',{{count1[3]}}],
+  ['THURSDAY', {{count1[4]}}],
+  ['FRIDAY', {{count1[5]}}],
+  ['SATURDAY', {{count1[6]}}],
+  ['SUNDAY', {{count1[0]}}]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+  chart.draw(data, options);
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<table class="table table-bordered table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      
+      <th scope="col">DAY</th>
+      <th scope="col">NO. OF PEOPLE VISITED</th>
+    </tr>
+  </thead>
+   <tbody>
+    <tr>
+      <th >1</th>
+      <td >SUNDAY</td>
+      <td>{{count1[0]}}</td>
+    </tr>
+
+    <tr>
+      <th scope="row">2</th>
+
+      <td>MONDAY</td>
+      <td>{{count1[1]}}</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+   
+      <td>TUESDAY</td>
+      <td>{{count1[2]}}</td>
+    </tr>
+    <tr>
+      <th >4</th>
+      <td >WEDNESDAY</td>
+      <td>{{count1[3]}}</td>
+    </tr>
+     <tr>
+      <th >5</th>
+      <td >THURSDAY</td>
+      <td>{{count1[4]}}</td>
+    </tr>
+     <tr>
+      <th >6</th>
+      <td >FRIDAY</td>
+      <td>{{count1[5]}}</td>
+    </tr>
+     <tr>
+      <th >7</th>
+      <td >SATURDAY</td>
+      <td>{{count1[6]}}</td>
+    </tr>
+     
+  </tbody>
+</table>
+</div>
+
+
+
+<!-- date picker -->
+
+<!--  jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+
+
+<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'dd/mm/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+</script>
+
+{% endblock %}

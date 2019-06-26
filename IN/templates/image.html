@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block title %} THE THROSHOS {% endblock %} {% block content %}
+<script >
+	
+</script>
+
+<style >
+    
+</style>
+
+<form action="image" method="POST">
+    <p>
+    	<h4>Portal to add image details</h4>
+
+        
+        source: <br><input type="text" name="src" required><br><br>
+        Destination: <br><input type="text" name="dest" required><br><br>
+        Image url: <br><input type="url" name="img_url" required><br><br>
+    </p>
+    <button type="submit" >Submit</button>
+</form>
+
+{% endblock %}
