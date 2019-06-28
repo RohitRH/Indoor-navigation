@@ -3,7 +3,7 @@ from flask_pymongo import PyMongo
 import pymongo
 
 app = Flask(__name__)
-client = pymongo.MongoClient("mongodb://rohit:rohit@owner-shard-00-00-gwlya.mongodb.net:27017,owner-shard-00-01-gwlya.mongodb.net:27017,owner-shard-00-02-gwlya.mongodb.net:27017/owner?ssl=true&replicaSet=owner-shard-0&authSource=admin&retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb uri")
 db = client.owner
 
 app.config['SESSION_TYPE'] = 'memcached'
