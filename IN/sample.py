@@ -6,11 +6,11 @@ from datetime import date
 
 app = Flask(__name__)
 #app.config["MONGO_URI"] = "mongodb://localhost:27017/owner"
-# app.config["MONGO_URI"] = "mongodb+srv://rohitrrh2222:Nimmajja123@owner-gwlya.mongodb.net/test?retryWrites=true&w=majority"
+
 #mongo = PyMongo(app)
 
 
-client = pymongo.MongoClient("mongodb://rohit:rohit@owner-shard-00-00-gwlya.mongodb.net:27017,owner-shard-00-01-gwlya.mongodb.net:27017,owner-shard-00-02-gwlya.mongodb.net:27017/owner?ssl=true&replicaSet=owner-shard-0&authSource=admin&retryWrites=true&w=majority")
+client = pymongo.MongoClient("uri")
 db = client.owner
 
 
@@ -20,12 +20,6 @@ app.config['SESSION_TYPE'] = 'memcached'
 app.config['SECRET_KEY'] = 'super secret key'
 # sess = Session()
 
-#data = {}
-#items = {}
-
-
-# USER='admin'
-# PASS='admin'
 
 @app.route('/')
 @app.route('/home')
