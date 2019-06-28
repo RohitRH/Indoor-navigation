@@ -4,7 +4,7 @@ from flask_pymongo import PyMongo
 
 app = Flask(__name__)
 app.config["MONGO_URI"] = "mongodb://localhost:27017/owner"
-#app.config["MONGO_URI"] = "mongodb+srv://rohitrrh2222:Nimmajja123@owner-gwlya.mongodb.net/test?retryWrites=true&w=majority"
+#app.config["MONGO_URI"] = "uri"
 mongo = PyMongo(app)
 
 app.config['SESSION_TYPE'] = 'memcached'
@@ -14,8 +14,6 @@ app.config['SECRET_KEY'] = 'super secret key'
 data={}
 items={}
 
-#USER='admin'
-#PASS='admin'
 
 @app.route('/')
 @app.route("/index")
