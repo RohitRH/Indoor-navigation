@@ -10,7 +10,7 @@ app = Flask(__name__)
 #mongo = PyMongo(app)
 
 
-client = pymongo.MongoClient("uri")
+client = pymongo.MongoClient("mongodb uri ")
 db = client.owner
 
 
