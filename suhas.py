@@ -7,7 +7,7 @@ import datetime,random,base64
 app = Flask(__name__)
 api = Api(app)
 
-mongo=pymongo.MongoClient("mongodb://suhas:suhas@owner-shard-00-00-gwlya.mongodb.net:27017,owner-shard-00-01-gwlya.mongodb.net:27017,owner-shard-00-02-gwlya.mongodb.net:27017/owner?ssl=true&replicaSet=owner-shard-0&authSource=admin&retryWrites=true&w=majority",connect=False)
+mongo=pymongo.MongoClient("",connect=False)
 db = mongo.owner
 
 class Search(Resource):
